@@ -1,6 +1,6 @@
 import React from "react";
 
-const Banner: React.FC = () => {
+const Banner = () => {
     return(
         <div>Banner</div>
     )

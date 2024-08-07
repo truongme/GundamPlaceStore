@@ -1,14 +1,15 @@
 import React from 'react';
 import { useForm, Controller, SubmitHandler } from 'react-hook-form';
 import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
+import styles from './styles.module.scss'
+import ButtonCustom from '../../components/Button';
 
 interface ILoginForm {
     username: string;
     password: string;
 }
 
-const Login: React.FC = () => {
+const Login = () => {
 
     const { control, handleSubmit, formState: { errors } } = useForm<ILoginForm>();
 
@@ -60,9 +61,7 @@ const Login: React.FC = () => {
                     )}
                 />
             </div>
-            <Button type="submit" variant="contained" color="primary">
-                Login
-            </Button>
+            <ButtonCustom label='Login'/>
         </form>
     );
 };

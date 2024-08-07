@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../Card";
 
-const ListProduct: React.FC = () => {
+const ListProduct = () => {
     const arr = ["Gumdam", "Place", "Store"]
     return(
         <div>
