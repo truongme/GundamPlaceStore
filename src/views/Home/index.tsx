@@ -1,18 +1,18 @@
 import { Container } from '@mui/material';
 import React from 'react';
 import Banner from '../../components/Banner';
-import ListProduct from '../../components/ListProduct';
+import ListProduct from '../ListProduct';
+import Category from '../../components/Category';
+import News from '../News';
 
 const Home = () => {
   return (
     <div>
+      <Category />
       <Container maxWidth="xl">
-        
-        <h1>Home</h1>
-        <Banner/>
-        <h1>List Product</h1>
-        <ListProduct/>
-        <h1>News</h1>
+        <Banner />
+        <ListProduct />
+        <News />
       </Container>
     </div>
   )

@@ -1,8 +1,13 @@
-import React from "react";
+import { Container } from "@mui/material";
+import styles from './styles.module.scss'
 
 const Footer = () => {
     return(
-        <div>Footer</div>
+        <div className={styles.footerCtn}>
+            <Container maxWidth="xl">
+                Footer
+            </Container>
+        </div>
     )
 }
 
