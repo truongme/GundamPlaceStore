@@ -41,14 +41,7 @@ const Login = () => {
                     name="password"
                     control={control}
                     defaultValue=""
-                    rules={{
-                        required: 'Password is required',
-                        minLength: { value: 6, message: 'Password must be at least 6 characters' },
-                        pattern: {
-                            value: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]+$/,
-                            message: 'Password must contain both letters and numbers'
-                        }
-                    }}
+                    rules={{required: 'Password is required'}}
                     render={({ field }) => (
                         <TextField
                             {...field}
