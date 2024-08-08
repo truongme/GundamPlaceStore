@@ -1,5 +1,32 @@
 @import '../../assets/styles/variable.scss';
 
 .headerCtn{
-    background-color: $background !important;
+    background-color: $background ;
+    color: $white !important;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;
+    text-transform: uppercase;
+    .headerContent{
+        display: flex;
+        justify-content: space-between;
+        .headerSection{
+            display: flex;
+            align-items: center;
+            .headerItem{
+                cursor: pointer;
+                margin: 10px;
+                padding: 5px 15px;
+                border-radius: 5px;
+                &:hover{
+                    background-color: $primary;
+                }
+            }
+            .iconButton {
+                background-color: $primary;
+                color: white; 
+            }
+        }
+        
+    }
 }
