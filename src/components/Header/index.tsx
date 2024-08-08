@@ -43,7 +43,7 @@ const Header = () => {
         <AppBar position="static" className={styles.headerCtn}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <Logo/>
+                    <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
                     <Typography
                         variant="h6"
                         noWrap
@@ -98,7 +98,7 @@ const Header = () => {
                             ))}
                         </Menu>
                     </Box>
-                    <Logo/>
+                    <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
                     <Typography
                         variant="h5"
                         noWrap
