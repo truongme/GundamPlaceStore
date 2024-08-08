@@ -1,12 +1,11 @@
 import { Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Footer from "./layouts/Footer";
 import routes from '../src/router';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import BasicSpeedDial from "./components/SpeedDial";
 import styles from './styles.module.scss'
-
+import Header from "./layouts/Header";
 
 function App() {
   return (
@@ -18,7 +17,7 @@ function App() {
         ))}
       </Routes>
       <div className={styles.speedDial}>
-        <BasicSpeedDial />
+        <BasicSpeedDial/>
       </div>
       <Footer />
     </div>

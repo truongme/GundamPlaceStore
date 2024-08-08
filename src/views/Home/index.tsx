@@ -1,8 +1,8 @@
 import { Container } from '@mui/material';
 import React from 'react';
-import Banner from '../../components/Banner';
+import Banner from '../../layouts/Banner';
 import ListProduct from '../ListProduct';
-import Category from '../../components/Category';
+import Category from '../../layouts/Category';
 import News from '../News';
 
 const Home = () => {

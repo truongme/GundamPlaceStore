@@ -1,9 +1,9 @@
 import { Grid } from "@mui/material";
 import React from "react";
 import styles from './styles.module.scss'
-import NewsCard from "../../components/NewsCard";
-import NewsCardFocus from "../../components/NewsCard";
-import NewsCardItem from "../../components/NewsCard/newsItem";
+import NewsCard from "../../layouts/NewsCard";
+import NewsCardFocus from "../../layouts/NewsCard";
+import NewsCardItem from "../../layouts/NewsCard/newsItem";
 
 const News = () => {
     return (

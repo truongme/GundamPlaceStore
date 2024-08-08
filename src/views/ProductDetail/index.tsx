@@ -1,8 +1,9 @@
-import React from "react";
+import { Container } from "@mui/material";
 
 const ProductDetail = () => {
+
     return(
-        <div>ProductDetail</div>
+        <Container maxWidth="xl">ProductDetail</Container>
     )
 }
 
