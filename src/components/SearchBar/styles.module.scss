@@ -1,0 +1,80 @@
+@import "../../assets/styles/variable.scss";
+
+.inputSearchCtn {
+    font-family: "Neue Frutiger World", Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 15px;
+    font-weight: 100;
+    text-transform: none;
+    .inputSearchContent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 45px;
+        width: 500px;
+        border-radius: 50px;
+        background-color: $white;
+        padding: 0px 6px 0px 15px;
+        input {
+            font-size: 15px;
+            outline: none;
+            border: none;
+            width: 440px;
+        }
+        .inputSearchIcon {
+            cursor: pointer;
+            font-size: 35px;
+            background-color: $primary;
+            padding: 5px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+    }
+    .dropDownSearch {
+        position: absolute;
+        color: black;
+        top: 83px !important;
+        border-radius: 8px;
+        width: 100%;
+        background-color: $white;
+        z-index: 1;
+
+        .dropDownSearchTitle {
+            margin: 5px 0px;
+        }
+
+        .dropDownSearchItem {
+            margin: 5px;
+            padding: 5px 8px;
+            border: 2px solid $primary;
+            border-radius: 20px;
+            font-size: 13px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $primary-500;
+            }
+        }
+
+        .dropDownHistoryItem{
+            cursor: pointer;
+            margin: 6px 0px;
+            padding: 8px 10px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+            &:hover{
+                background-color: $primary-500;
+            }
+
+            .dropDownHistoryContent{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}

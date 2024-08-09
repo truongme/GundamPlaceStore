@@ -1,0 +1,34 @@
+@import "../../assets/styles/variable.scss";
+
+.userCtn {
+  display: flex;
+  margin: 20px 0px;
+
+  .userMenu {
+    color: $white;
+    height: 172px;
+    width: 20%;
+    background-color: $black;
+    border-radius: 16px;
+    .userItem {
+      font-size: 18px;
+      font-weight: 500;
+      padding: 10px;
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 8px;
+      &:hover {
+        background-color: $primary;
+      }
+    }
+  }
+  .userContent {
+    width: 78%;
+    margin-left: 2%;
+    border-radius: 16px;
+    background-color: aqua;
+    .userComponent {
+      margin: 20px;
+    }
+  }
+}

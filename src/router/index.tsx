@@ -13,7 +13,7 @@ const routes = [
     { path: "/news", element: <News /> },
     { path: "/collection", element: <ListProduct /> },
     { path: "/user/:id", element: <User /> },
-    { path: "/gundam/:id", element: <ProductDetail /> },
+    { path: "/gundam/:id", element: <ProductDetail idProduct={5}/> },
 ];
 
 export default routes;

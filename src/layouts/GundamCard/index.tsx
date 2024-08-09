@@ -19,7 +19,7 @@ const GundamCard: React.FC<ICardProps> = (props) => {
                 <CardMedia
                     component="img"
                     height="140"
-                    image="/static/images/cards/contemplative-reptile.jpg"
+                    image={props.img}
                     alt="Gundam"
                 />
                 <CardContent>
