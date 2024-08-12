@@ -1,0 +1,108 @@
+@import "../../assets/styles/variable.scss";
+
+.homeCtn {
+  background-color: $white-500;
+  .imgCtn {
+    width: 100%;
+    height: 500px;
+    .imgBanner {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .topSearchCtn {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    background-color: $white;
+    color: $primary;
+    font-weight: 500;
+    .topSearchTitle {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding: 10px 20px;
+      border-bottom: 3px solid $primary;
+      span {
+        margin-right: 5px;
+      }
+    }
+    .topSearchList {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      color: $black;
+      .topSearchItem {
+        cursor: pointer;
+        .topSearchImgCtn {
+          width: 250px;
+          height: 300px;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .topSearchContent {
+          margin-top: 10px;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+.listProductTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+  background-color: $white;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: $primary;
+  text-transform: uppercase;
+  border-bottom: 3px solid $primary;
+  span {
+    margin-right: 5px;
+  }
+}
+
+.paginationCtn {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.listProductFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+  background-color: $white;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: $primary;
+  text-transform: uppercase;
+  border-bottom: 3px solid $primary;
+  cursor: pointer;
+  span {
+    margin-right: 5px;
+  }
+}
+
+.newsGird {
+  display: flex;
+  .newsFocusCtn {
+    width: 50%;
+    margin-right: 20px;
+  }
+  .newsListCtn {
+    width: 50%;
+  }
+}

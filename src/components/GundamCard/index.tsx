@@ -3,7 +3,10 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import { Button, CardActionArea } from '@mui/material';
+import img from '../../assets/images/card.jpg'
+import styles from './styles.module.scss'
+import ButtonCustom from '../Button';
 
 interface ICardProps{
     id: number,
@@ -18,17 +21,18 @@ const GundamCard: React.FC<ICardProps> = (props) => {
             <CardActionArea>
                 <CardMedia
                     component="img"
-                    height="140"
-                    image={props.img}
+                    height="400"
+                    image={img}
                     alt="Gundam"
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
+                    <Typography gutterBottom variant="h6" component="div">
                         {props.name}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        {props.price}
+                        {'$' + props.price}
                     </Typography>
+                    <ButtonCustom label='add to bag'/>
                 </CardContent>
             </CardActionArea>
         </Card>

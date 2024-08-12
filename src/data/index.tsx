@@ -1,3 +1,8 @@
+export const List_User = [
+    { id: 1, username: 'truong', password: '123456', role: 'user' },
+    { id: 2, username: 'dung', password: '123456', role: 'admin' },
+]
+
 export const List_Category = [
     { id: 1, name: 'Universal Century' },
     { id: 2, name: 'Cosmic Era' },
@@ -24,4 +29,16 @@ export const List_History = [
     'Gundam Barbatos',
     'Gundam Unicorn',
     'Turn A Gundam'
+]
+
+export const listGundamFamous = [
+    "Universal Century", 
+    "Cosmic Era", 
+    "After Colony", 
+    "Anno Domini",
+    'Gundam Barbatos',
+];
+
+export const List_Cart = [
+    { id: 1, name: 'Universal Century', price: 50, quantuity: 5 },
 ]
